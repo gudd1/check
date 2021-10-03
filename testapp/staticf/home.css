@@ -1,0 +1,320 @@
+.{
+margin:0;
+padding:0;
+
+
+
+
+}
+
+
+
+.check1{
+margin-left:8ch;
+background:#r6789g;
+}
+.check1 .check2{
+margin-left:10ch;
+background:#78g54d;
+}
+
+/*body
+{
+
+margin:0;
+width:100%;
+height:8ch;
+background:linear-gradient(135deg,#f403d1,#64b5f6);
+animation:gradient 10s ease infinite;
+
+}
+
+.box2
+{
+
+background:linear-gradient(135deg,#ffec61,#f321d7,#24ff72,#2196f3);
+animation:gradient 10s ease infinite;
+}
+.box3
+{
+
+background:linear-gradient(135deg,#24ff72,#2196f3);}
+
+@keyframes gradient{
+  0%{
+     background-position:0 50%;
+  }
+  50%{
+     background-position:100% 50%;
+  }
+  100%{
+     background-position:0 50%;
+  }
+}*/
+
+.box1 {
+
+	/*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+	background:linear-gradient(135deg,#ffec61,#f321d7,#24ff72,#2196f3);
+	background-size: 400% 400%;
+	animation: gradient 35s ease infinite;
+	height: 12vh;
+    text-align:center;
+    font-family:cursive;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.box1 .car{
+
+font-size:50px;
+
+color: #fff;
+animation:glow 30s ease-in-out infinite alternate;}
+
+@-webkit-keyframes glow{
+  from{
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;}
+     to{
+     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50 px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;}}
+
+
+.car_image:hover {
+  -ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25);
+}
+.menu-bar{
+
+background:linear-gradient(135deg,#ffec61,#f321d7,#24ff72,#2196f3);
+
+text-align:center;
+
+}
+.menu-bar ul{
+  float: left;
+  font-size: 16px;
+
+  text-align: center;
+
+  text-decoration: none;
+display:inline-flex;
+list-style:none;
+color:fff;
+}
+
+.menu-bar ul li{
+  color:#fff;
+  width:180px;
+  margin:5px;
+  padding: 0px;
+}
+
+.menu-bar ul li:hover{
+  background-color:#8870e4;
+}
+
+/*
+
+}*/
+
+.sub-menu{
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   }
+.sub-menu ul{
+ float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+.sub-menu ul li{
+display:block;
+color:black;
+}
+.sub-menu ul li:hover{
+  background-color:#8870e4;
+}
+
+
+
+.menu-bar ul li:hover .sub-menu {
+  display: block;
+}
+.navbar {
+  overflow: hidden;
+  background:linear-gradient(135deg,#ffec61,#f321d7,#24ff72,#2196f3) ;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+ margin-left:8ch;
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover  {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.search-bar{
+float:right;
+overflow:hidden;
+}
+.search-box{
+align:right;
+padding-left:10ch;
+}
+/*.box1 .car{
+    position: relative;
+    text-transform: uppercase;
+
+}
+
+.box1 .car{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+            clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+}
+
+.box1 .car::before,
+.box1 .car::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box1 .car::before {
+    animation: crack1 2.5s linear forwards;
+    -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+}
+
+.box1 .car::after {
+    animation: crack2 2.5s linear forwards;
+    -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+            clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+}
+
+@keyframes shake {
+    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+        filter: blur(0.018em);
+        transform: translateY(0.018em) rotate(0deg);
+    }
+
+    10%, 30%, 40%, 50%, 70%, 80%, 90% {
+        filter: blur(0.01em);
+        transform: translateY(-0.018em) rotate(0deg);
+    }
+
+    20%, 60% {
+        filter: blur(0.03em);
+        transform: translate(-0.018em, 0.018em) rotate(0deg);
+    }
+
+    45%, 85% {
+        filter: blur(0.03em);
+        transform: translate(0.018em, -0.018em) rotate(0deg);
+    }
+
+    100% {
+        filter: blur(0.007em);
+        transform: translate(0) rotate(-0.5deg);
+    }
+}
+
+@keyframes crack1 {
+    0%, 95% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-51%, -48%);
+    }
+}
+
+@keyframes crack2 {
+    0%, 95% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-49%, -53%);
+    }
+}*/

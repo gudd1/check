@@ -1,0 +1,37 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'ss.css' %}"/>
+</head>
+
+<body>
+
+
+
+
+      <div class="trans-box" style=" margin-top: 20ch; margin-left: 45ch; margin-right: 50ch; background-color:#fb4242;">
+
+     <h1 style="margin-left:2.5ch; color:#444444;">Register</h1>
+          <form action="{% url 'doregister' %}" method="POST">
+              {% csrf_token %}
+     <div class="front_block" name="front_block" style=" margin-top: 1ch; margin-left: 5ch; margin-right: 5ch; margin-bottom: 5ch; padding: 12px 0; background-color:#676766;">
+
+
+       <div><label type="text" class="label_field_1" name="name1" style="margin-left:1ch;">Your Name</label><input type="text" class="input_field_1" name="username" style="margin-left:1ch;" required></div>
+        <div style="padding:10px 0;"> <label type="text" class="label_field_1" name="E-mail-l" style="margin-left:1ch;">E-mail</label><input type="text" class="input_field_1" name="E-mail" style="margin-left:1ch;" required></div>
+        <div style="padding:10px 0;"> <label type="text" class="label_field_1" name="password-l" style="margin-left:1ch;">Password</label><input type="text" class="input_field_1" name="password" style="margin-left:1ch;" required></div>
+         <div style="padding:10px 0;"> <label type="text" class="label_field_1" name="repassword-l" style="margin-left:1ch;">Re-enter Password</label><input type="text" class="input_field_1" name="repassword" style="margin-left:1ch;" required></div>
+         {% for message in messages %}
+         <label >{{message}}</label>
+
+         {% endfor %}
+
+         <div style="padding:10px 0;"><button type="submit" class="label_field_1" name="register" style="margin-left:20ch;">register</button></div>
+          </form>
+  </div></div>
+</body>
+</html>
