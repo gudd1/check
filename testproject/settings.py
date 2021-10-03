@@ -29,7 +29,7 @@ SECRET_KEY = config("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['carshowroom.herokuapp.com']
+ALLOWED_HOSTS = ['carshowroom-.herokuapp.com']
 
 
 # Application definition
