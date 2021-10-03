@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import django_heroku
 from decouple import config
 from pathlib import Path
 
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    #'django.contrib.staticfiles',
     'testapp',
 ]
 
@@ -126,7 +127,7 @@ USE_TZ = True
 #STATIC_URL = '/static/'
 STATIC_URL='/fgghh/'
 #BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-#STATIC_ROOT=os.path.join(BASE_DIR, 'static')
+STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'testapp/staticf'),
@@ -139,3 +140,6 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+django_heroku.settings(locals())
+
+#sudo apt-get install libgmp-dev portaudio19-dev libssl-dev python3-dev (do this before pip3 install psycopg2) to install requirements
