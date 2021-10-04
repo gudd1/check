@@ -36,3 +36,4 @@ def scrap():
          w.writeheader()
          for quote in quotes:
              w.writerow(quote)
+#https://www.carwale.com/maruti-suzuki-cars/
