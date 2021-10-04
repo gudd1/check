@@ -5,7 +5,7 @@ import csv
 
 
 def scrap():
-    listofurls=[]
+    #listofurls=["https://www.carwale.com/upcoming-cars/"]
     #for loop for urls
     URL = "https://carsshowroom.herokuapp.com/"
     r = requests.get(URL)
