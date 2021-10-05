@@ -5,7 +5,7 @@ import csv
 
 
 def scrap():
-    listofurls=[]
+    #listofurls=["https://www.cardekho.com/upcomingcars",https://www.carwale.com/upcoming-cars/","https://www.autocarindia.com/upcoming-cars"]
     #for loop for urls
     URL = "https://carsshowroom.herokuapp.com/"
     r = requests.get(URL)
@@ -36,3 +36,4 @@ def scrap():
          w.writeheader()
          for quote in quotes:
              w.writerow(quote)
+#https://www.carwale.com/maruti-suzuki-cars/

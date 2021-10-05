@@ -25,3 +25,9 @@ input,
  {
     margin: .4rem 0;
 }
+
+.new-car{
+   background-size: 148.72px 202.00px;
+   height:377px;
+   transform: rotate(90deg);
+}
