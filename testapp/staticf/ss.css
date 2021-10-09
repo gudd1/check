@@ -21,10 +21,17 @@ body{
     transform:translate(-50%,-50%);
     color: white;
 }*/
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
 .trans-box {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: 50%;
-    margin-right: 50%;
+    margin-right: 10%;
     margin-bottom: 2%;
     background-color:#0c0c0cad;
 
