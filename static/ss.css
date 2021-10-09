@@ -22,16 +22,16 @@ body{
     color: white;
 }*/
 .trans-box {
-    margin-top: 20ch;
-    margin-left: 50ch;
-    margin-right: 50ch;
-    margin-bottom: 2ch;
+    margin-top: 20%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 2%;
     background-color:#0c0c0cad;
 
 }
 .col-md-8{
-    margin-top: 20ch;
-    margin-inline: 20ch;
+    margin-top: 20%;
+    margin-inline: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
