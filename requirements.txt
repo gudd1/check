@@ -6,3 +6,4 @@ python-decouple
 requests
 beautifulsoup4
 html5lib
+pycryptodome
