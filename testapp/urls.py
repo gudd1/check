@@ -9,6 +9,7 @@ urlpatterns = [
     path('loggedin/',views.dologin,name='dologin'),
     path('upcoming/',views.upcoming,name='upcoming'),
     path('brand/<bname>/',views.brand,name='brand'),
-
+    path('pay/', views.initiate_payment, name='pay'),
+    path('callback/', views.callback, name='callback'),
 
 ]

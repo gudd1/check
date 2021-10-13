@@ -8,6 +8,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>CARS</title>
     <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
@@ -71,14 +72,65 @@
    </div>--->
 </header>
 <br>
-<div class="sub-content">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Nissan/Nissan-X-Trail/3718/1568357284267/front-left-side-47.jpg">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/8241/1609921660871/front-left-side-47.jpg">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Rapid-2021/7257/1617089181428/front-left-side-47.jpg">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BMW/M4/8049/1601037917028/front-left-side-47.jpg">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Defender/7641/1624347789462/front-left-side-47.jpg">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/EQA/8276/1611229665131/front-left-side-47.jpg">
-    <img class="new-car" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/Audi-Q3-2019/6518/1550820204323/front-left-side-47.jpg">
+
+<div class="header-cars">
+<div class="sub-content" >
+<h2 class="w3-center" style="margin-left:20%;">
+
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Nissan/Nissan-X-Trail/3718/1568357284267/front-left-side-47.jpg">
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Fortuner/8241/1609921660871/front-left-side-47.jpg">
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Rapid-2021/7257/1617089181428/front-left-side-47.jpg">
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/BMW/M4/8049/1601037917028/front-left-side-47.jpg">
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Land-Rover/Defender/7641/1624347789462/front-left-side-47.jpg">
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/EQA/8276/1611229665131/front-left-side-47.jpg">
+    <img class="new-car" width="800" height="300" alt="" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Audi/Audi-Q3-2019/6518/1550820204323/front-left-side-47.jpg">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</h2>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("new-car");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+
+}
+</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+
+  var i;
+  var slides = document.getElementsByClassName("new-car");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex-1].style.display = "block";
+
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 
 </div>
 

@@ -140,6 +140,13 @@ STATICFILES_DIRS = (
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PAYTM_MERCHANT_ID = 'VMLsKh33374131769871'
+PAYTM_SECRET_KEY = 'detnklihv568cfb9'
+PAYTM_WEBSITE = 'WEBSTAGING'
+PAYTM_CHANNEL_ID = 'WEB'
+PAYTM_INDUSTRY_TYPE_ID = 'Retail'
+
 django_heroku.settings(locals())
 
 #sudo apt-get install libgmp-dev portaudio19-dev libssl-dev python3-dev (do this before pip3 install psycopg2) to install requirements
